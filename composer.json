@@ -20,6 +20,7 @@
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/core-vendor-hardening": "^9.4",
+        "drupal/shield": "^1.6",
         "drupal/vani": "^8.1",
         "drush/drush": "^11.0"
     },
