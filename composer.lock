@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "532f6bf73d526c0bc25eb716ed147093",
+    "content-hash": "9b4f032afd36bfdc0daa167c8e1eb2e1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1206,6 +1206,62 @@
             "time": "2022-05-31T18:46:25+00:00"
         },
         {
+            "name": "drupal/clamav",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/clamav.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/clamav-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "4a42d34c113470e5116719b08286f1f834dc0933"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1600079786",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "James Andres",
+                    "homepage": "https://www.drupal.org/user/33827"
+                },
+                {
+                    "name": "adammalone",
+                    "homepage": "https://www.drupal.org/user/1295980"
+                },
+                {
+                    "name": "manarth",
+                    "homepage": "https://www.drupal.org/user/321496"
+                },
+                {
+                    "name": "mcdruid",
+                    "homepage": "https://www.drupal.org/user/255969"
+                }
+            ],
+            "description": "Integration with the ClamAV anti-virus scanner.",
+            "homepage": "https://www.drupal.org/project/clamav",
+            "support": {
+                "source": "https://git.drupalcode.org/project/clamav"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "9.4.2",
             "source": {
@@ -1665,6 +1721,80 @@
             ]
         },
         {
+            "name": "drupal/new_relic_rpm",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/new_relic_rpm.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/new_relic_rpm-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "10f3a89f17b80103f05cf84038ff1783c69e4e98"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1615809419",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Chris Charlton",
+                    "homepage": "https://www.drupal.org/user/17089"
+                },
+                {
+                    "name": "Jonathan Webb",
+                    "homepage": "https://www.drupal.org/user/61512"
+                },
+                {
+                    "name": "hosef",
+                    "homepage": "https://www.drupal.org/user/1203298"
+                },
+                {
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "nterbogt",
+                    "homepage": "https://www.drupal.org/user/102218"
+                },
+                {
+                    "name": "soyarma",
+                    "homepage": "https://www.drupal.org/user/286273"
+                }
+            ],
+            "description": "Provides additional newrelic integration with Drupal.",
+            "homepage": "https://drupal.org/project/new_relic_rpm",
+            "support": {
+                "source": "https://git.drupalcode.org/project/new_relic_rpm",
+                "issues": "https://drupal.org/project/issues/new_relic_rpm"
+            }
+        },
+        {
             "name": "drupal/shield",
             "version": "1.6.0",
             "source": {
@@ -1780,6 +1910,71 @@
             "homepage": "https://www.drupal.org/project/vani",
             "support": {
                 "source": "https://git.drupalcode.org/project/vani"
+            }
+        },
+        {
+            "name": "drupal/zircon",
+            "version": "dev-9.1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/zircon.git",
+                "reference": "068ee7176b54d8a8a2d449b02182587592355ad6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-9.1.x": "9.1.x-dev"
+                },
+                "drupal": {
+                    "version": "9.1.x-dev",
+                    "datestamp": "1644996192",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Gauravmahlawat",
+                    "homepage": "https://www.drupal.org/user/3643629"
+                },
+                {
+                    "name": "Hai Nguyen",
+                    "homepage": "https://www.drupal.org/user/1229130"
+                },
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "WeebPal",
+                    "homepage": "https://www.drupal.org/user/1861072"
+                },
+                {
+                    "name": "buivankim2020",
+                    "homepage": "https://www.drupal.org/user/2959439"
+                },
+                {
+                    "name": "mpp",
+                    "homepage": "https://www.drupal.org/user/359881"
+                },
+                {
+                    "name": "tgoeg",
+                    "homepage": "https://www.drupal.org/user/3531072"
+                }
+            ],
+            "description": "A flexible, recolorable theme with many regions and a responsive, mobile-first layout with Drupal 9 support.",
+            "homepage": "https://www.drupal.org/project/zircon",
+            "support": {
+                "source": "https://git.drupalcode.org/project/zircon"
             }
         },
         {
@@ -6620,7 +6815,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/zircon": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
