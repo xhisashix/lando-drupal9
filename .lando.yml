@@ -7,3 +7,7 @@ services:
     type: phpmyadmin
     host:
       - database
+  mailhog:
+    type: mailhog
+    hogform:
+      - appserver
