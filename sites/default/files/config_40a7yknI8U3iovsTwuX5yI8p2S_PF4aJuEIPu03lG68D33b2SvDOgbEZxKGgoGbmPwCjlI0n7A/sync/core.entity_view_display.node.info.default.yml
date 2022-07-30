@@ -1,0 +1,49 @@
+uuid: 08b49ef4-44bb-4070-abd4-a2d8ec3ce7e0
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.info.body
+    - field.field.node.info.field_category
+    - field.field.node.info.field_comment
+    - node.type.info
+  module:
+    - comment
+    - text
+    - user
+id: node.info.default
+targetEntityType: node
+bundle: info
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

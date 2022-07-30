@@ -1,0 +1,22 @@
+uuid: 69175d8b-1498-426f-9d58-4157e1fd90e9
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zircon
+_core:
+  default_config_hash: EAPpof-OFVhvV9Xi5WsRB827n9EceoSDSXG8EFSjhGM
+id: zircon_messages
+theme: zircon
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

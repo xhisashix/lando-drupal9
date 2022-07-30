@@ -1,0 +1,18 @@
+uuid: 6c2658fe-b596-4825-b427-07e25a248db6
+langcode: ja
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: お知らせ
+type: info
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

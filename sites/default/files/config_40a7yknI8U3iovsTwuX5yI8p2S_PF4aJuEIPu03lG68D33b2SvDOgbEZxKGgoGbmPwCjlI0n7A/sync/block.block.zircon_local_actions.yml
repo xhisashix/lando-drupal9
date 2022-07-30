@@ -1,0 +1,20 @@
+uuid: 35c58422-5fd6-4951-8606-0d7fd6373d67
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - zircon
+_core:
+  default_config_hash: ieghZ097mY9lSP0MbDzbQPVZb7OIkpefQjrRb9KbYWs
+id: zircon_local_actions
+theme: zircon
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

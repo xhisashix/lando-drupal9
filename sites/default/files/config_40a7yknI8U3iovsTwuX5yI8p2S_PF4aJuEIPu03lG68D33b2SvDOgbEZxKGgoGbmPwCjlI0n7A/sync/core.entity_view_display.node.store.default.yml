@@ -1,0 +1,47 @@
+uuid: a73c20d3-adfc-4cb8-89bf-53a52bb2fc86
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.store.body
+    - field.field.node.store.field_phone_number
+    - field.field.node.store.field_stores_detail
+    - node.type.store
+  module:
+    - text
+    - user
+id: node.store.default
+targetEntityType: node
+bundle: store
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_phone_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_stores_detail:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

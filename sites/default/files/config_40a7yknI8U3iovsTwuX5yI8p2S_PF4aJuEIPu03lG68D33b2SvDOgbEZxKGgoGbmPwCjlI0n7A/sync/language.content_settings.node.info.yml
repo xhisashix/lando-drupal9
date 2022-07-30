@@ -1,0 +1,11 @@
+uuid: f6c2225f-0298-40fa-b769-111c4eaaa0c6
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.info
+id: node.info
+target_entity_type_id: node
+target_bundle: info
+default_langcode: site_default
+language_alterable: false

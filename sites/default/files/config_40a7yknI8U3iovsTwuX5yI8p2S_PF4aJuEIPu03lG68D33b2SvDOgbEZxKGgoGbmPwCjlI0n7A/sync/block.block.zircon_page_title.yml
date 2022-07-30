@@ -1,0 +1,20 @@
+uuid: 1f375d83-33eb-4394-bd88-b5eac9a111ec
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - zircon
+_core:
+  default_config_hash: eygL-_5_izUstAfyRFzbpxlSsJTMbu_kbOGpqzA7cmg
+id: zircon_page_title
+theme: zircon
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 0526e00b-f65e-4001-bbfa-b211f782ec9f
+langcode: ja
+status: true
+dependencies: {  }
+name: 店舗特徴
+vid: stores_detail
+description: ''
+weight: 0

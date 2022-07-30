@@ -1,0 +1,27 @@
+uuid: bcd262ae-cc25-47e2-baee-fed0e5df93a0
+langcode: ja
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - zircon
+_core:
+  default_config_hash: H6dFO9ZEb5ZG3KwDYHNTM68B9zbiHVvzMtDnxVKakgc
+id: zircon_tools
+theme: zircon
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

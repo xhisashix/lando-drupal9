@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: ja
+uuid: 1dad2837-d2a3-41d7-a1a3-58a3b491e721
+name: テスト
+mail: test@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/5
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: ja
