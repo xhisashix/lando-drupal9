@@ -2,6 +2,9 @@ name: lando-drupal9
 recipe: drupal9
 config:
   webroot: .
+  xdebug: true
+  config:
+    php: .vscode/php.ini
 services:
   phpmyadmin:
     type: phpmyadmin
