@@ -21,6 +21,8 @@
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/core-vendor-hardening": "^9.4",
+        "drupal/devel": "^4.1",
+        "drupal/devel_kint_extras": "^1.1",
         "drupal/new_relic_rpm": "^2.1",
         "drupal/shield": "^1.6",
         "drupal/vani": "^8.1",
