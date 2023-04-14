@@ -1,12 +1,37 @@
 <?php
 
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_form_alter().
  */
-function marucha_form_alters(&$form, FormStateInterface $form_state, $form_id) {
-  if($form_id == 'comment_comment_form') {
+function marucha_form_alters(&$form, FormStateInterface $form_state, $form_id)
+{
+  if ($form_id == 'comment_comment_form') {
     $form['actions']['submit']['#value'] = t('コメント');
   }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function marucha_cron()
+{
+  \Drupal::messenger()->addMessage('Cron is running.');
+}
+
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function marucha_node_view(&$build, EntityInterface  $entity, EntityViewDisplayInterface $display, $view_mode)
+{
+  \Drupal::moduleHandler()->invokeAll('marucha_hello_world');
+}
+
+function marucha_marucha_hello_world()
+{
+  \Drupal::messenger()->addMessage('marucha_marucha_hello_world');
 }
