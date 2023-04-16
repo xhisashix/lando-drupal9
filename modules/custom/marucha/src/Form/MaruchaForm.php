@@ -5,6 +5,7 @@ namespace Drupal\marucha\Form;
 use Drupal\Component\Utility\EmailValidator;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\marucha\Service\MaruchaService;
 use Psr\Container\ContainerInterface;
 
 /**
@@ -14,16 +15,19 @@ class MaruchaForm extends FormBase
 {
 
   protected $email_validator;
+  protected $marucha_service;
 
-  public function __construct(EmailValidator $email_validator)
+  public function __construct(EmailValidator $email_validator, MaruchaService $marucha_service)
   {
     $this->email_validator = $email_validator;
+    $this->marucha_service = $marucha_service;
   }
 
   public static function create(ContainerInterface $container)
   {
     return new static(
-      $container->get('email.validator')
+      $container->get('email.validator'),
+      $container->get('marucha.drink')
     );
   }
 
@@ -136,6 +140,6 @@ class MaruchaForm extends FormBase
   public function submitForm(array &$form, FormStateInterface $form_state)
   {
     // Submit rules.
-    $this->messenger()->addMessage($this->t('Your message has been sent.'));
+    $this->messenger()->addMessage($this->t('Your drink is @drink', ['@drink' => $this->marucha_service->getDrink()]));
   }
 }
