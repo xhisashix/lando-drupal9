@@ -18,10 +18,7 @@ class MaruchBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $build = [];
-    $build['maruch_block']['#markup'] = 'Implement MaruchBlock.';
-
-    return $build;
+    return \Drupal::formBuilder()->getForm('Drupal\marucha\Form\MaruchaForm');
   }
 
 }

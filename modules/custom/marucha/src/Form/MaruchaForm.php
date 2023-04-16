@@ -37,6 +37,53 @@ class MaruchaForm extends FormBase {
         '#size' => 64,
         '#weight' => '0',
       ];
+      $form['phone'] = [
+        '#type' => 'tel',
+        '#title' => $this->t('Phone'),
+        '#description' => $this->t('Phone'),
+        '#maxlength' => 64,
+        '#size' => 64,
+        '#weight' => '0',
+      ];
+      $form['radio'] = [
+        '#type' => 'radios',
+        '#title' => $this->t('ラジオボタン'),
+        '#description' => $this->t('Radio'),
+        '#options' => [
+          '1' => $this->t('1'),
+          '2' => $this->t('2'),
+          '3' => $this->t('3'),
+        ],
+        '#weight' => '0',
+      ];
+      $form['checkbox'] = [
+        '#type' => 'checkboxes',
+        '#title' => $this->t('チェックボックス'),
+        '#description' => $this->t('Checkbox'),
+        '#options' => [
+          '1' => $this->t('1'),
+          '2' => $this->t('2'),
+          '3' => $this->t('3'),
+        ],
+        '#weight' => '0',
+      ];
+      $form['select'] = [
+        '#type' => 'select',
+        '#title' => $this->t('セレクトボックス'),
+        '#description' => $this->t('Select'),
+        '#options' => [
+          '1' => $this->t('1'),
+          '2' => $this->t('2'),
+          '3' => $this->t('3'),
+        ],
+        '#weight' => '0',
+      ];
+      $form['color'] = [
+        '#type' => 'color',
+        '#title' => $this->t('カラーピッカー'),
+        '#description' => $this->t('Color'),
+        '#weight' => '0',
+      ];
       $form['message'] = [
         '#type' => 'textarea',
         '#title' => $this->t('Message'),
