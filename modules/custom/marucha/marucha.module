@@ -3,6 +3,9 @@
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\user\UserInterface;
+use Drupal\marucha\Event\MaruchaFirstEvent;
+use Drupal\marucha\Event\MaruchaEvents;
 
 /**
  * Implements hook_form_alter().
@@ -34,4 +37,14 @@ function marucha_node_view(&$build, EntityInterface  $entity, EntityViewDisplayI
 function marucha_marucha_hello_world()
 {
   \Drupal::messenger()->addMessage('marucha_marucha_hello_world');
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function marucha_user_login(UserInterface $account)
+{
+  $event = new MaruchaFirstEvent($account);
+  $event_dispatcher = \Drupal::service('event_dispatcher');
+  $event_dispatcher->dispatch($event, MaruchaEvents::FIRST_EVENT);
 }

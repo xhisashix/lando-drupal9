@@ -1,3 +1,11 @@
 services:
   marucha.drink:
     class: '\Drupal\marucha\Service\MaruchaService'
+  marucha.config_subscriber:
+    class: '\Drupal\marucha\EventSubscriber\ConfigSubscriber'
+    tags:
+      - { name: event_subscriber }
+  marucha.subscriber:
+    class: '\Drupal\marucha\EventSubscriber\MaruchaSubscriber'
+    tags:
+      - { name: event_subscriber }
