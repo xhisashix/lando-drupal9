@@ -38,13 +38,6 @@ class NewRelicLogger implements LoggerInterface {
   protected $configFactory;
 
   /**
-   * The level of the last logged message.
-   *
-   * @var int
-   */
-  protected $lastLoggedLevel = 8;
-
-  /**
    * Constructs a DbLog object.
    *
    * @param \Drupal\Core\Logger\LogMessageParserInterface $parser
@@ -74,11 +67,6 @@ class NewRelicLogger implements LoggerInterface {
    *   Indicator of whether the message should be logged or not.
    */
   private function shouldLog($level) {
-    // Always log the most severe latest message.
-    if ($level > $this->lastLoggedLevel) {
-      return FALSE;
-    }
-
     $validLevels = $this->configFactory->get('new_relic_rpm.settings')->get('watchdog_severities') ?: [];
     return in_array($level, $validLevels);
   }
@@ -103,18 +91,10 @@ class NewRelicLogger implements LoggerInterface {
   /**
    * {@inheritdoc}
    */
-  public function log($level, $message, array $context = []) {
+  public function log($level, $message, array $context = []): void {
 
     // Check if the severity is supposed to be logged.
     if (!$this->shouldLog($level)) {
-      return;
-    }
-
-    $this->lastLoggedLevel = $level;
-
-    // If we were passed an exception, use that instead.
-    if (isset($context['exception'])) {
-      $this->adapter->logException($context['exception']);
       return;
     }
 
@@ -132,7 +112,7 @@ class NewRelicLogger implements LoggerInterface {
       '@message' => strip_tags(strtr($message, $message_placeholders)),
     ]);
 
-    $this->adapter->logError($message);
+    $this->adapter->logError($message, isset($context['exception']) ? $context['exception'] : NULL);
   }
 
 }

@@ -7,6 +7,8 @@ namespace Drupal\new_relic_rpm\ExtensionAdapter;
  */
 interface NewRelicAdapterInterface {
 
+  const STATE_NORMAL = 'norm';
+
   const STATE_IGNORE = 'ignore';
 
   const STATE_BACKGROUND = 'bg';
@@ -22,18 +24,20 @@ interface NewRelicAdapterInterface {
   /**
    * Logs an exception.
    *
-   * @param \Exception $e
+   * @param \Exception|\Throwable $exception
    *   The exception.
    */
-  public function logException(\Exception $e);
+  public function logException($exception);
 
   /**
    * Logs an error message.
    *
    * @param string $message
    *   The error message.
+   * @param \Exception|\Throwable $exception
+   *   The exception.
    */
-  public function logError($message);
+  public function logError($message, $exception = NULL);
 
   /**
    * Adds a custom parameter.

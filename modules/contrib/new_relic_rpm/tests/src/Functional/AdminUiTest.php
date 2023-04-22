@@ -8,6 +8,7 @@ use Drupal\Tests\BrowserTestBase;
  * Tests admin UI.
  *
  * @package Drupal\Tests\new_relic_rpm\Functional
+ * @group new_relic_rpm
  */
 class AdminUiTest extends BrowserTestBase {
 
@@ -15,6 +16,8 @@ class AdminUiTest extends BrowserTestBase {
    * {@inheritdoc}
    */
   protected static $modules = ['new_relic_rpm'];
+
+  protected $defaultTheme = 'stark';
 
   /**
    * The WebAssert.
@@ -35,7 +38,7 @@ class AdminUiTest extends BrowserTestBase {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $admin = $this->createUser([], NULL, TRUE);

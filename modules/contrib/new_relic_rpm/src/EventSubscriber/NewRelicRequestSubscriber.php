@@ -2,12 +2,12 @@
 
 namespace Drupal\new_relic_rpm\EventSubscriber;
 
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Path\CurrentPathStack;
 use Drupal\Core\Path\PathMatcherInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\new_relic_rpm\ExtensionAdapter\NewRelicAdapterInterface;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -32,11 +32,11 @@ class NewRelicRequestSubscriber implements EventSubscriberInterface {
   protected $pathMatcher;
 
   /**
-   * The configuration for the New Relic RPM module.
+   * The configuration factory.
    *
-   * @var \Drupal\Core\Config\ImmutableConfig
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
    */
-  protected $config;
+  protected $configFactory;
 
   /**
    * An object representing the current URL path of the request.
@@ -76,7 +76,7 @@ class NewRelicRequestSubscriber implements EventSubscriberInterface {
   public function __construct(NewRelicAdapterInterface $adapter, PathMatcherInterface $path_matcher, ConfigFactoryInterface $config_factory, CurrentPathStack $current_path_stack, AccountInterface $current_user) {
     $this->adapter = $adapter;
     $this->pathMatcher = $path_matcher;
-    $this->config = $config_factory->get('new_relic_rpm.settings');
+    $this->configFactory = $config_factory;
     $this->currentPathStack = $current_path_stack;
     $this->currentUser = $current_user;
   }
@@ -95,10 +95,10 @@ class NewRelicRequestSubscriber implements EventSubscriberInterface {
    *
    * Naming is based on the current path and route.
    *
-   * @param \Symfony\Component\HttpKernel\Event\GetResponseEvent $event
+   * @param \Symfony\Component\HttpKernel\Event\RequestEvent $event
    *   The current response event for the page.
    */
-  public function onRequest(GetResponseEvent $event) {
+  public function onRequest(RequestEvent $event) {
 
     // If this is a sub request, only process it if there was no master
     // request yet. In that case, it is probably a page not found or access
@@ -107,11 +107,13 @@ class NewRelicRequestSubscriber implements EventSubscriberInterface {
       return;
     }
 
-    $ignore_roles = $this->config->get('ignore_roles');
-    $ignore_urls = $this->config->get('ignore_urls');
-    $bg_urls = $this->config->get('bg_urls');
-    $exclude_urls = $this->config->get('exclusive_urls');
-    $disable_autorum = $this->config->get('disable_autorum');
+    $config = $this->configFactory->get('new_relic_rpm.settings');
+
+    $ignore_roles = $config->get('ignore_roles');
+    $ignore_urls = $config->get('ignore_urls');
+    $bg_urls = $config->get('bg_urls');
+    $exclude_urls = $config->get('exclusive_urls');
+    $disable_autorum = $config->get('disable_autorum');
 
     if ($disable_autorum) {
       $this->adapter->disableAutorum();
