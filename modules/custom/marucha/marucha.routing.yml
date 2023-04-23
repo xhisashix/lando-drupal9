@@ -12,3 +12,10 @@ marucha.form:
     _title: 'Marucha Form'
   requirements:
     _permission: 'access content'
+marucha.admin_settings:
+  path: '/admin/config/marucha'
+  defaults:
+    _form: '\Drupal\marucha\Form\SampleConfigForm'
+    _title: 'Marucha Settings'
+  requirements:
+    _permission: 'administer site configuration'
