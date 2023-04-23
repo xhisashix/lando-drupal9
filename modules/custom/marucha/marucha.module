@@ -22,7 +22,17 @@ function marucha_form_alters(&$form, FormStateInterface $form_state, $form_id)
  */
 function marucha_cron()
 {
-  \Drupal::messenger()->addMessage('Cron is running.');
+  $nodeStorage = \Drupal::entityTypeManager()->getStorage('node');
+
+  $node = $nodeStorage->load(1);
+
+  \Drupal::messenger()->addStatus('読み込んだノードタイトル: ' . $node->getTitle());
+
+  $newNode = $nodeStorage->create([
+    'type' => 'article',
+    'title' => 'APIで作成したノード',
+    'body' => '新しいノードの本文',
+  ])->save();
 }
 
 
