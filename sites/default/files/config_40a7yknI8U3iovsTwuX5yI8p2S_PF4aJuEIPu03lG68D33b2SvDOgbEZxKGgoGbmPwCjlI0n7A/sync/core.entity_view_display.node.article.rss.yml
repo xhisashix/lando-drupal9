@@ -1,5 +1,5 @@
-uuid: 3a2a7c75-9777-446a-bc72-e0758d16e02c
-langcode: ja
+uuid: 782b5225-e46c-4dc2-b68e-c5affa7c1a62
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_store_kind
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -26,6 +25,4 @@ hidden:
   body: true
   comment: true
   field_image: true
-  field_store_kind: true
   field_tags: true
-  langcode: true

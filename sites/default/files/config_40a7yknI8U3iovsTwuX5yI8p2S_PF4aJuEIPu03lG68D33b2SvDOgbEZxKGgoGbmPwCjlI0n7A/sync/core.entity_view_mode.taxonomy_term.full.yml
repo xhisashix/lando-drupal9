@@ -1,5 +1,5 @@
-uuid: 2d69c40e-c910-4209-b728-5c5c299075f5
-langcode: ja
+uuid: 4b029f41-4174-4433-9173-0a35d2031274
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: '-PPKjsNQPvoIDjOuUAvlLocYD976MNjb9Zpgyz5_BWE'
 id: taxonomy_term.full
-label: タクソノミータームのページ
+label: 'Taxonomy term page'
 targetEntityType: taxonomy_term
 cache: true

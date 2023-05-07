@@ -1,5 +1,5 @@
-uuid: 622c4350-2ab8-4179-8c5f-f32787636e52
-langcode: ja
+uuid: 606731c5-d375-4984-8783-72531fcb63b0
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.article.body
 field_name: body
 entity_type: node
 bundle: article
-label: 本文
+label: Body
 description: ''
 required: false
 translatable: true

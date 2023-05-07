@@ -1,10 +1,10 @@
-uuid: 5cdd893f-152b-4b4c-8216-e4376a07b1ee
-langcode: ja
+uuid: f131c99a-baa3-4a92-9761-0dff0fa47c26
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
 id: tools
 label: Tools
-description: モジュールなどで追加されたユーザーツールリンク
+description: 'User tool links, often added by modules'
 locked: true

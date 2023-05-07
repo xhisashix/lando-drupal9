@@ -1,5 +1,5 @@
-uuid: 55849661-5f2b-4431-abe7-5bf5acf4474f
-langcode: ja
+uuid: 37286607-1b3a-444f-ac1c-9e4f337b5b19
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: nvrL9bFilzBvm2bjO9rQnFDpBA7dBBUjShSSt6NS-DU
 id: user_cancel_user_action
-label: 選択されたユーザーアカウントをキャンセル
+label: 'Cancel the selected user account(s)'
 type: user
 plugin: user_cancel_user_action
 configuration: {  }

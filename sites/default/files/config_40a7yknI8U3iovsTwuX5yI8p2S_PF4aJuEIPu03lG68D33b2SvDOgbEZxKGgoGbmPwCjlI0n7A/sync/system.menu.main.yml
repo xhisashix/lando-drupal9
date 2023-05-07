@@ -1,10 +1,10 @@
-uuid: a36efb25-dbee-4427-84b5-519e3055ebfd
-langcode: ja
+uuid: 8f937a4b-c25e-46da-ab0d-33668615ea6e
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
 label: 'Main navigation'
-description: サイトセクションのリンク
+description: 'Site section links'
 locked: true

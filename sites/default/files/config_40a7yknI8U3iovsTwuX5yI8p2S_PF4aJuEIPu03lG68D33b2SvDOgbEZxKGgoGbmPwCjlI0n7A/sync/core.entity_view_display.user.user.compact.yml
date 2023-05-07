@@ -1,5 +1,5 @@
-uuid: cf34e68f-fc06-483e-afae-5b0213e6c728
-langcode: ja
+uuid: 41b3a3bb-a0be-426a-816a-c622bf766428
+langcode: en
 status: true
 dependencies:
   config:
@@ -20,13 +20,12 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: content
       image_style: thumbnail
+      image_link: content
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  langcode: true
   member_for: true

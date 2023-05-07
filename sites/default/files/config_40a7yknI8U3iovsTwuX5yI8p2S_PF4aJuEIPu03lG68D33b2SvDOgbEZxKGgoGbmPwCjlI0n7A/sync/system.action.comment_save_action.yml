@@ -1,5 +1,5 @@
-uuid: d6a3c797-c708-4979-a806-f00bf81ab231
-langcode: ja
+uuid: 28c6243a-2433-4bc4-89e1-7a33fd6f8bff
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: lfyE_snmvfg_EQ3VDyhUtGAXgmqtEiqa46I3bTMg8DU
 id: comment_save_action
-label: コメントの保存
+label: 'Save comment'
 type: comment
 plugin: 'entity:save_action:comment'
 configuration: {  }

@@ -1,5 +1,5 @@
-uuid: e2a0aaa9-45d9-42a5-8c5e-c93dee28e00a
-langcode: ja
+uuid: e7e82720-2da6-4876-9db9-202fd278aeb8
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,9 +7,9 @@ dependencies:
 _core:
   default_config_hash: njaZigMvB4ap21Fg_tQcJhWgYJCGNi49Z5rRL_N6RI0
 id: user_admin_people
-label: ユーザー
+label: People
 module: user
-description: サイトにアクセスするユーザーの抽出と管理
+description: 'Find and manage people interacting with your site.'
 tag: default
 base_table: users_field_data
 base_field: uid
@@ -20,7 +20,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ユーザー
+      title: People
       fields:
         user_bulk_form:
           id: user_bulk_form
@@ -31,7 +31,7 @@ display:
           admin_label: ''
           entity_type: user
           plugin_id: user_bulk_form
-          label: 一括更新
+          label: 'Bulk update'
           exclude: false
           alter:
             alter_text: false
@@ -82,7 +82,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: ユーザー名
+          label: Username
           exclude: false
           alter:
             alter_text: false
@@ -178,8 +178,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: ブロック
-            format_custom_true: アクティブ
+            format_custom_false: Blocked
+            format_custom_true: Active
         roles_target_id:
           id: roles_target_id
           table: user__roles
@@ -188,7 +188,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: user_roles
-          label: 役割
+          label: Roles
           exclude: false
           alter:
             alter_text: false
@@ -241,7 +241,7 @@ display:
           entity_type: user
           entity_field: created
           plugin_id: field
-          label: ユーザー登録から
+          label: 'Member for'
           exclude: false
           alter:
             alter_text: false
@@ -297,7 +297,7 @@ display:
           entity_type: user
           entity_field: access
           plugin_id: field
-          label: 前回のアクセス
+          label: 'Last access'
           exclude: false
           alter:
             alter_text: false
@@ -505,7 +505,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 利用可能なユーザーがいません。
+          content: 'No people available.'
           tokenize: false
       sorts:
         created:
@@ -539,7 +539,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 名前またはメールアドレスが以下を含む
+            label: 'Name or email contains'
             description: ''
             use_operator: false
             operator: combine_op
@@ -611,11 +611,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: アクティブ
+                title: Active
                 operator: '='
                 value: '1'
               2:
-                title: ブロック
+                title: Blocked
                 operator: '='
                 value: '0'
         roles_target_id:
@@ -632,7 +632,7 @@ display:
           exposed: true
           expose:
             operator_id: roles_target_id_op
-            label: 役割
+            label: Role
             description: ''
             use_operator: false
             operator: roles_target_id_op
@@ -674,7 +674,7 @@ display:
           exposed: true
           expose:
             operator_id: permission_op
-            label: 権限
+            label: Permission
             description: ''
             use_operator: false
             operator: permission_op
@@ -877,7 +877,7 @@ display:
       show_admin_links: true
       use_more: false
       use_more_always: false
-      use_more_text: 続き
+      use_more_text: more
       link_display: page_1
       link_url: ''
       display_comment: ''
@@ -905,15 +905,15 @@ display:
       path: admin/people/list
       menu:
         type: 'default tab'
-        title: リスト
-        description: サイトにアクセスするユーザーの抽出と管理
+        title: List
+        description: 'Find and manage people interacting with your site.'
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: ユーザー
-        description: ユーザーアカウント、ロール、権限の管理をします。
+        title: People
+        description: 'Manage user accounts, roles, and permissions.'
         weight: 0
         menu_name: admin
     cache_metadata:

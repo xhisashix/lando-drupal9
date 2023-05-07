@@ -1,10 +1,10 @@
-uuid: 36ec1b71-b73a-4888-9019-d0f827a50723
-langcode: ja
+uuid: 9f9c8503-d3eb-4f23-9674-ae7d6dbfce3c
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
-name: タグ
+name: Tags
 vid: tags
-description: 記事をトピックなどに合わせてグループ化するにはタグを使用してください
+description: 'Use tags to group articles on similar topics into categories.'
 weight: 0

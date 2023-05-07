@@ -1,12 +1,12 @@
-uuid: ac636f73-8d7a-4f47-a449-a7aadde3e8a0
-langcode: ja
+uuid: d25df554-7c8f-4a0c-895b-84f8aa79e839
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: 記事
+name: Article
 type: article
-description: ニュースやプレスリリース、ブログのような時系列が重要なコンテンツには<em>記事</em>を使ってください。
+description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 help: ''
 new_revision: true
 preview_mode: 1

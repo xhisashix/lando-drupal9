@@ -1,5 +1,5 @@
-uuid: 3f7dc227-6230-41bc-bf5f-da9b28020b5f
-langcode: ja
+uuid: 34fbd689-6638-4f30-9c43-a67f01f29991
+langcode: en
 status: true
 dependencies:
   config:
@@ -12,8 +12,8 @@ id: node.article.field_tags
 field_name: field_tags
 entity_type: node
 bundle: article
-label: タグ
-description: 'コンマ区切りのリストを入力してください。例: アムステルダム, メキシコシティ, "クリーブランド, オハイオ"'
+label: Tags
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
 required: false
 translatable: true
 default_value: {  }

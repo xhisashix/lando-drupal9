@@ -1,5 +1,5 @@
-uuid: 7f9c9277-870b-4731-b16b-57c30c22b1ad
-langcode: ja
+uuid: 22df0292-ed63-4504-9d2a-30c9a3a05ac6
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
 id: node_search
-label: コンテンツ
+label: Content
 path: node
 weight: -10
 plugin: node_search

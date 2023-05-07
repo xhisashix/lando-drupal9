@@ -1,5 +1,5 @@
-uuid: 1c29b07d-76cc-450c-9bb9-e736cbb67fa2
-langcode: ja
+uuid: af207699-f9df-4636-85d7-3aafd62693e6
+langcode: en
 status: false
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: sz_FoMz5aClG4jFy4UDlkenXQtgTUXohEDjWVBuHaro
 id: glossary
-label: 用語集
+label: Glossary
 module: node
 description: 'All content, by letter.'
 tag: default
@@ -34,7 +34,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: タイトル
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -137,7 +137,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: 前回の更新
+          label: 'Last update'
           exclude: false
           alter:
             alter_text: false
@@ -204,7 +204,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: 適用
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -378,7 +378,7 @@ display:
       tags: {  }
   attachment_1:
     id: attachment_1
-    display_title: 添付
+    display_title: Attachment
     display_plugin: attachment
     position: 2
     display_options:
@@ -457,7 +457,7 @@ display:
       path: glossary
       menu:
         type: normal
-        title: 用語集
+        title: Glossary
         weight: 0
         menu_name: main
         parent: ''

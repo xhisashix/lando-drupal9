@@ -1,5 +1,5 @@
-uuid: e1c49151-7826-47d8-a43c-211cda485952
-langcode: ja
+uuid: 5458d188-def7-4825-ab2c-eb9f4858ef9b
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
 id: node_unpromote_action
-label: 'コンテンツをフロント ページから削除'
+label: 'Remove content from front page'
 type: node
 plugin: node_unpromote_action
 configuration: {  }

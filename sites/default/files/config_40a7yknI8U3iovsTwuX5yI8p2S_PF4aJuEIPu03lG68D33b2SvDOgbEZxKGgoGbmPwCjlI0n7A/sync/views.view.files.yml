@@ -1,5 +1,5 @@
-uuid: 4b91430c-0112-48cf-bc45-9fdc6dfccc7d
-langcode: ja
+uuid: f9d3bd8f-236c-4196-8839-c108c1712dcd
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: DaGeEDJMcbbQtgV96AuPeZ-0irMc_Oa6Zzh2U3Kmul8
 id: files
-label: ファイル
+label: Files
 module: file
-description: ファイルの検索と管理。
+description: 'Find and manage files.'
 tag: default
 base_table: file_managed
 base_field: fid
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ファイル
+      title: Files
       fields:
         fid:
           id: fid
@@ -33,7 +33,7 @@ display:
           entity_type: file
           entity_field: fid
           plugin_id: field
-          label: FID
+          label: Fid
           exclude: true
           alter:
             alter_text: false
@@ -129,7 +129,7 @@ display:
           entity_type: file
           entity_field: filemime
           plugin_id: field
-          label: 'MIME タイプ'
+          label: 'MIME type'
           exclude: false
           alter:
             alter_text: false
@@ -181,7 +181,7 @@ display:
           entity_type: file
           entity_field: filesize
           plugin_id: field
-          label: サイズ
+          label: Size
           exclude: false
           alter:
             alter_text: false
@@ -277,8 +277,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: 一時的
-            format_custom_true: 恒久的
+            format_custom_false: Temporary
+            format_custom_true: Permanent
         created:
           id: created
           table: file_managed
@@ -289,7 +289,7 @@ display:
           entity_type: file
           entity_field: created
           plugin_id: field
-          label: アップロード日時
+          label: 'Upload date'
           exclude: false
           alter:
             alter_text: false
@@ -345,7 +345,7 @@ display:
           entity_type: file
           entity_field: changed
           plugin_id: field
-          label: 更新日
+          label: 'Changed date'
           exclude: false
           alter:
             alter_text: false
@@ -399,7 +399,7 @@ display:
           group_type: sum
           admin_label: ''
           plugin_id: numeric
-          label: 利用場所
+          label: 'Used in'
           exclude: false
           alter:
             alter_text: false
@@ -490,7 +490,7 @@ display:
           field: area_text_custom
           plugin_id: text_custom
           empty: true
-          content: 利用可能なファイルがありません。
+          content: 'No files available.'
       sorts: {  }
       arguments: {  }
       filters:
@@ -510,7 +510,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: ファイル名
+            label: Filename
             description: ''
             use_operator: false
             operator: filename_op
@@ -552,7 +552,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'MIME タイプ'
+            label: 'MIME type'
             description: ''
             use_operator: false
             operator: filemime_op
@@ -735,7 +735,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: ファイルの概要
+    display_title: 'Files overview'
     display_plugin: page
     position: 1
     display_options:
@@ -756,7 +756,7 @@ display:
       path: admin/content/files
       menu:
         type: tab
-        title: ファイル
+        title: Files
         description: ''
         weight: 0
         menu_name: admin
@@ -772,11 +772,11 @@ display:
       tags: {  }
   page_2:
     id: page_2
-    display_title: ファイルの用途
+    display_title: 'File usage'
     display_plugin: page
     position: 2
     display_options:
-      title: ファイルの用途
+      title: 'File usage'
       fields:
         entity_label:
           id: entity_label
@@ -786,7 +786,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_label
-          label: エンティティ
+          label: Entity
           exclude: false
           alter:
             alter_text: false
@@ -836,7 +836,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: エンティティタイプ
+          label: 'Entity type'
           exclude: false
           alter:
             alter_text: false
@@ -885,7 +885,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: モジュールの登録
+          label: 'Registering module'
           exclude: false
           alter:
             alter_text: false
@@ -934,7 +934,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: numeric
-          label: 使用回数
+          label: 'Use count'
           exclude: false
           alter:
             alter_text: false
@@ -1019,7 +1019,7 @@ display:
             title_enable: false
             title: All
           title_enable: true
-          title: '{{ arguments.fid }}のファイル使用情報'
+          title: 'File usage information for {{ arguments.fid }}'
           default_argument_type: fixed
           default_argument_options:
             argument: ''

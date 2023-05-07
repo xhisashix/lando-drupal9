@@ -1,5 +1,5 @@
-uuid: 6899bad4-d124-487c-936e-75839af5a842
-langcode: ja
+uuid: f49380ce-b9a1-4e00-81bc-df97e3b1c059
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: YKgw0f77GEmCu6_6Om9Mbig0mON9JdfVuMxTtd0WQaI
 id: taxonomy_term
-label: タクソノミーターム
+label: 'Taxonomy term'
 module: taxonomy
-description: 特定のタクソノミータームに所属するコンテンツ。
+description: 'Content belonging to a certain taxonomy term.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -46,7 +46,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: 適用
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -261,7 +261,7 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: フィード
+    display_title: Feed
     display_plugin: feed
     position: 2
     display_options:

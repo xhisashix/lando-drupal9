@@ -1,5 +1,5 @@
-uuid: ac4fb407-b5a1-476f-a5a1-17f3c80b8ddd
-langcode: ja
+uuid: 5e3ed16b-15fe-49c8-a23e-5a02fe921fd7
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: 6eeliKIydPjqyv5V__QqTfahvJMWkHjOVUUuUIdB1ik
 id: frontpage
-label: フロントページ
+label: Frontpage
 module: node
-description: フロントページに掲載されている全てのコンテンツ
+description: 'All content promoted to the front page.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -50,7 +50,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: 適用
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -75,7 +75,7 @@ display:
           plugin_id: text_custom
           label: ''
           empty: true
-          content: 'フロントページのコンテンツはまだ作成されていません。<br>サイトを構築するには<a target="_blank" href="https://www.drupal.org/ja/docs/user_guide/ja/index.html">ユーザーガイド</a>を参照してください。'
+          content: 'No front page content has been created yet.<br/>Follow the <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">User Guide</a> to start building your site.'
           tokenize: false
         node_listing_empty:
           id: node_listing_empty
@@ -261,7 +261,7 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: フィード
+    display_title: Feed
     display_plugin: feed
     position: 2
     display_options:

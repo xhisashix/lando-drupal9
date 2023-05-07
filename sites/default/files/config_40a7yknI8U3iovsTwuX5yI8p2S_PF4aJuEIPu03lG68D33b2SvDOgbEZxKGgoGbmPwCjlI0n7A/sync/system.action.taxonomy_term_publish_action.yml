@@ -1,5 +1,5 @@
-uuid: d37a8f47-cca5-466b-94be-4bdb28177d16
-langcode: ja
+uuid: b2026cc0-7ecb-414a-b24e-9e051e985108
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: DoVt_VGgVLcDD4XmVbSFzr0K17SJy9imFiYusKkJBgY
 id: taxonomy_term_publish_action
-label: タクソノミータームを掲載
+label: 'Publish taxonomy term'
 type: taxonomy_term
 plugin: 'entity:publish_action:taxonomy_term'
 configuration: {  }

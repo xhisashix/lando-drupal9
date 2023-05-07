@@ -1,5 +1,5 @@
-uuid: e967b5bc-1fb5-41e5-a913-1f2da6aae4f3
-langcode: ja
+uuid: 014dc76c-b4bd-4bbc-918b-1e8a3258ad4b
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,9 +7,9 @@ dependencies:
 _core:
   default_config_hash: suDsVMgawXoQt4rfmdfpr05EVX3z3KyfDDTYgeSM898
 id: who_s_online
-label: 現在オンラインのユーザーを表示するブロック
+label: 'Who''s online block'
 module: user
-description: 最近のアクティブなユーザーの名前と全アクティブユーザーの数を表示します。
+description: 'Shows the user names of the most recently active users, and the total number of active users.'
 tag: default
 base_table: users_field_data
 base_field: uid
@@ -20,7 +20,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: オンライン状況
+      title: 'Who''s online'
       fields:
         name:
           id: name
@@ -64,7 +64,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: 適用
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -88,7 +88,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 現在オンラインのユーザーはいません。
+          content: 'There are currently 0 users online.'
           tokenize: false
       sorts:
         access:
@@ -142,8 +142,8 @@ display:
           exposed: false
           expose:
             operator_id: access_op
-            label: 前回のアクセス
-            description: 'ユーザーがオンラインであると見なす時間を指定してください。 最後にページを表示してからこの時間が経過するまで、そのユーザーはオンラインであると見なされます。'
+            label: 'Last access'
+            description: 'A user is considered online for this long after they have last viewed a page.'
             use_operator: false
             operator: access_op
             operator_limit_selection: false
@@ -198,7 +198,7 @@ display:
           admin_label: ''
           plugin_id: result
           empty: false
-          content: '現在 @total 人のユーザーがオンラインです。'
+          content: 'There are currently @total users online.'
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -210,13 +210,13 @@ display:
       tags: {  }
   who_s_online_block:
     id: who_s_online_block
-    display_title: オンライン状況
+    display_title: 'Who''s online'
     display_plugin: block
     position: 1
     display_options:
-      display_description: 現在ログインしているユーザーの一覧。
+      display_description: 'A list of users that are currently logged in.'
       display_extenders: {  }
-      block_description: オンライン状況
+      block_description: 'Who''s online'
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,5 +1,5 @@
-uuid: 5ee99e97-6693-48da-8e2a-cf615f226efa
-langcode: ja
+uuid: d851f64b-4dd3-4577-a94f-bbfff75a89f3
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: SPsUXsR3Rc8d1y3gewzaAKWa1ncea_ywXX3f7LTn7k0
 id: user_unblock_user_action
-label: 選択されたユーザーのブロックを解除
+label: 'Unblock the selected user(s)'
 type: user
 plugin: user_unblock_user_action
 configuration: {  }

@@ -1,13 +1,13 @@
-uuid: 4d172ffd-a01a-4993-ad8e-6c8db42618f9
-langcode: ja
+uuid: 7054aecb-629a-4148-a1dc-b9eb1d4b5713
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
 id: personal
-label: パーソナルコンタクトフォーム
+label: 'Personal contact form'
 recipients: {  }
 reply: ''
 weight: 0
-message: メッセージは送信されました
+message: 'Your message has been sent.'
 redirect: ''

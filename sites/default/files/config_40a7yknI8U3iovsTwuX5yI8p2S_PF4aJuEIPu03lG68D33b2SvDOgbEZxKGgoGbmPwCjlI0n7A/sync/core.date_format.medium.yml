@@ -1,10 +1,10 @@
-uuid: fb3222c0-7275-4799-b0a8-ade09953f82d
-langcode: ja
+uuid: 49754f5c-c472-4f13-9430-f6618ed6518e
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
 id: medium
-label: デフォルトの中ぐらいの日付
+label: 'Default medium date'
 locked: false
-pattern: 'Y/m/d(D) - H:i'
+pattern: 'D, m/d/Y - H:i'

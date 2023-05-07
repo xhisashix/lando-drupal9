@@ -1,5 +1,5 @@
-uuid: e8c05457-aa8d-41c1-925c-832834fbedd7
-langcode: ja
+uuid: 0a89e48e-a8c0-4caf-b240-47e23a79fd4c
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: block_content.basic.body
 field_name: body
 entity_type: block_content
 bundle: basic
-label: 本文
+label: Body
 description: ''
 required: false
 translatable: true

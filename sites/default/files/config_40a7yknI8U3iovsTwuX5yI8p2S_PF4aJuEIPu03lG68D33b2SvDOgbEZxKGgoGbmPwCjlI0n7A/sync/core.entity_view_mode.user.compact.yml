@@ -1,5 +1,5 @@
-uuid: 82972ac8-4ff6-4cc7-9283-03cb5e510e96
-langcode: ja
+uuid: 88e852bc-476c-4043-8312-d8a999342250
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: 71CSAr_LNPcgu6D6jI4INl1KATkahmeyUFBETAWya8g
 id: user.compact
-label: コンパクト
+label: Compact
 targetEntityType: user
 cache: true

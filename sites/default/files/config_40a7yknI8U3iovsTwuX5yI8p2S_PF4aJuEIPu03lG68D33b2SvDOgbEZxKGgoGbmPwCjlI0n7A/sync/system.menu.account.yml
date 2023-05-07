@@ -1,10 +1,10 @@
-uuid: fc7632a5-7e50-4358-a27c-a721680e73db
-langcode: ja
+uuid: 0528e622-63ea-4fa6-b54b-fb9f3d24db9d
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
 id: account
 label: 'User account menu'
-description: アクティブなユーザーアカウントに関連したリンク
+description: 'Links related to the active user account'
 locked: true

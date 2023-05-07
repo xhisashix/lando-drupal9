@@ -1,5 +1,5 @@
-uuid: ce930c27-ae4d-4781-b9d6-2da2284a969c
-langcode: ja
+uuid: d392da00-a127-4bc5-964f-f438bd1b176a
+langcode: en
 status: true
 dependencies:
   config:
@@ -35,5 +35,4 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-hidden:
-  langcode: true
+hidden: {  }

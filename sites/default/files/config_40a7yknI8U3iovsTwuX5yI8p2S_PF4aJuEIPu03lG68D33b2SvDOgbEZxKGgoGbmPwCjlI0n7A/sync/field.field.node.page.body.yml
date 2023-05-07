@@ -1,5 +1,5 @@
-uuid: f8dcc946-c80e-435f-802d-cc0dbece719b
-langcode: ja
+uuid: 6e926b7f-ebf5-4e4e-adc8-4ffcbd0d5123
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.page.body
 field_name: body
 entity_type: node
 bundle: page
-label: 本文
+label: Body
 description: ''
 required: false
 translatable: true

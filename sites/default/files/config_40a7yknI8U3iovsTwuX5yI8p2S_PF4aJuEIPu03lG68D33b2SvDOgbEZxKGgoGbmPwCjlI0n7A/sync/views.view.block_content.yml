@@ -1,5 +1,5 @@
-uuid: 26b32b86-4f43-47b2-84b6-9346efc18b08
-langcode: ja
+uuid: 8844ea35-85db-4ec7-96c6-31da65b609ef
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: jvd5Pu6jy-lra4oMr-mR7zuY6CVDv9CaNeoj0Y70gV4
 id: block_content
-label: カスタムブロックライブラリ
+label: 'Custom block library'
 module: views
-description: カスタムブロックの管理と検索
+description: 'Find and manage custom blocks.'
 tag: default
 base_table: block_content_field_data
 base_field: id
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: カスタムブロックライブラリ
+      title: 'Custom block library'
       fields:
         info:
           id: info
@@ -33,7 +33,7 @@ display:
           entity_type: null
           entity_field: info
           plugin_id: field
-          label: ブロックの説明
+          label: 'Block description'
           exclude: false
           alter:
             alter_text: false
@@ -98,7 +98,7 @@ display:
           entity_type: block_content
           entity_field: type
           plugin_id: field
-          label: ブロックタイプ
+          label: 'Block type'
           exclude: false
           alter:
             alter_text: false
@@ -281,7 +281,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: 適用
+          submit_button: Apply
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -305,7 +305,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 利用出来るカスタムブロックはありません。
+          content: 'There are no custom blocks available.'
           tokenize: false
         block_content_listing_empty:
           id: block_content_listing_empty
@@ -337,7 +337,7 @@ display:
           exposed: true
           expose:
             operator_id: info_op
-            label: ブロックの説明
+            label: 'Block description'
             description: ''
             use_operator: false
             operator: info_op
@@ -379,7 +379,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: ブロックタイプ
+            label: 'Block type'
             description: ''
             use_operator: false
             operator: type_op
@@ -526,7 +526,7 @@ display:
       path: admin/structure/block/block-content
       menu:
         type: tab
-        title: カスタムブロックライブラリ
+        title: 'Custom block library'
         description: ''
         weight: 0
         menu_name: admin

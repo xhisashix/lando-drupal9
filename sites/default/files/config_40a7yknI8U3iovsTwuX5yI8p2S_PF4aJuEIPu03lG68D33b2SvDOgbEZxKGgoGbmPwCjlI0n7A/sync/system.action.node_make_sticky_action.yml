@@ -1,5 +1,5 @@
-uuid: 43344703-a26c-4248-ad17-fd99bc33edd6
-langcode: ja
+uuid: 1cc01899-3d7f-4afe-ade5-330b970ebb87
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
 id: node_make_sticky_action
-label: コンテンツをリスト上部に固定
+label: 'Make content sticky'
 type: node
 plugin: node_make_sticky_action
 configuration: {  }

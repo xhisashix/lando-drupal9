@@ -1,8 +1,0 @@
-uuid: 29c6db48-6ba0-495e-883d-fd80ee1acbae
-langcode: ja
-status: true
-dependencies: {  }
-name: お知らせ
-vid: news
-description: ''
-weight: 0

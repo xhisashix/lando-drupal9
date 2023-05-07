@@ -1,5 +1,5 @@
-uuid: 3bc38040-9e54-423c-aa1a-9f9c7a0f21f1
-langcode: ja
+uuid: 1efe3fdb-205c-44f6-b970-02cdc414df9e
+langcode: en
 status: true
 dependencies:
   config:
@@ -21,5 +21,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  langcode: true
+hidden: {  }

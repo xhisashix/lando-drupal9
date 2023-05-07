@@ -1,5 +1,5 @@
-uuid: dfe1619f-c116-4720-a0e0-4972cf08dc31
-langcode: ja
+uuid: 8735a979-ba3e-44b5-b407-1c8ed2aac752
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,8 +13,8 @@ id: user.user.user_picture
 field_name: user_picture
 entity_type: user
 bundle: user
-label: 写真
-description: あなたの仮想の顔、あるいは写真。
+label: Picture
+description: 'Your virtual face or picture.'
 required: false
 translatable: true
 default_value: {  }

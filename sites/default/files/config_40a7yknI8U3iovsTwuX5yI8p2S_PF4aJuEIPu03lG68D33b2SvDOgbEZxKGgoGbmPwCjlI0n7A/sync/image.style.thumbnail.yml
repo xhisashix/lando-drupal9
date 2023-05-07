@@ -1,11 +1,11 @@
-uuid: 8194437d-491a-4d04-bf71-b88626c3938a
-langcode: ja
+uuid: 964395f5-df58-4903-8a72-0bb3b500c5d4
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: cCiWdBHgLwj5omG35lsKc4LkW4MBdmcctkVop4ol5x0
 name: thumbnail
-label: 'サムネイル (100x100)'
+label: 'Thumbnail (100×100)'
 effects:
   1cfec298-8620-4749-b100-ccb6c4500779:
     uuid: 1cfec298-8620-4749-b100-ccb6c4500779

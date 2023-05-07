@@ -1,5 +1,5 @@
-uuid: 802c9d4a-ec35-4af9-b02f-ffdeb40dfde4
-langcode: ja
+uuid: b10ebb3e-c193-44a8-b9cd-4e77acda499e
+langcode: en
 status: true
 dependencies:
   module:
@@ -22,7 +22,7 @@ tips:
   place-block:
     id: place-block
     plugin: text
-    label: ブロックを配置
+    label: 'Place Blocks'
     weight: 2
     selector: .button--small
     body: 'Any custom or contributed block can be added to a particular region by clicking on a button Place block. A new block can also be created by clicking on Place Block'
@@ -36,7 +36,7 @@ tips:
   configure-block:
     id: configure-block
     plugin: text
-    label: ブロックの構成
+    label: 'Configure Block'
     weight: 4
     selector: .dropbutton-widget
     body: 'By Clicking on "Configure" you can go ahead and edit the contents of the block, deal with the visibility settings and even change the placement of where it is on your theme.'
